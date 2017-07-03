@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composite_Inheritance\Composite.cs" />
+    <Compile Include="Composite_Inheritance\Inheritance.cs" />
+    <Compile Include="IoC\Implements.cs" />
+    <Compile Include="IoC\InjectByConstructor.cs" />
+    <Compile Include="IoC\InjectBySetter.cs" />
+    <Compile Include="IoC\Interfaces.cs" />
+    <Compile Include="IoC\NoIoC.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SOLID\DependencyInversion.cs" />
+    <Compile Include="SOLID\DependencyInversion\DependencyInversion.cs" />
+    <Compile Include="SOLID\DependencyInversion\NonDependencyInversion.cs" />
+    <Compile Include="SOLID\InterfaceSegregation\NonInterfaceSegregation.cs" />
     <Compile Include="SOLID\InterfaceSegregation\InterfaceSegregation.cs" />
     <Compile Include="SOLID\LeastKnowledge\Doctor.cs" />
     <Compile Include="SOLID\LeastKnowledge\FriendlyStaff.cs" />
@@ -56,9 +65,7 @@
     <Compile Include="SOLID\SingleResponsibility\MultiResponsibility.cs" />
     <Compile Include="SOLID\SingleResponsibility\SingleResponsibility.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IoC\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using OOP_Training.IoC;
 using OOP_Training.SOLID;
 using OOP_Training.SOLID.LeastKnowledge;
 using OOP_Training.SOLID.LiskovSubstitution;
@@ -32,6 +33,25 @@ namespace OOP_Training
 
             var goodStaff = new FriendlyStaff();
             goodStaff.BookDoctor(DateTime.Today);
+
+            #endregion
+
+            #region IoC
+
+            var noIoC = new NoIoC();
+            noIoC.Running();
+            noIoC.RidingBike();
+            noIoC.Swimming();
+
+            var injectByConstructor = new InjectByConstructor(new Sprint(), new RideRoadBike(), new FreeStyleSwim());
+            injectByConstructor.Running();
+            injectByConstructor.RidingBike();
+
+            var injectBySetter = new InjectBySetter();
+            injectBySetter.Run = new Sprint();
+            injectBySetter.RideBike = new RideRoadBike();
+            injectByConstructor.Running();
+            injectByConstructor.RidingBike();
 
             #endregion
 
