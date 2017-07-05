@@ -29,9 +29,12 @@ namespace OOP_Training.Composite_Inheritance
         }
     }
 
-    public abstract class Penguin_C : Bird
+    public class Wings : IFly
     {
-
+        public void Fly(int x, int y, int z)
+        {
+            //implement of fly here
+        }
     }
 
     public class Pilot
@@ -47,5 +50,19 @@ namespace OOP_Training.Composite_Inheritance
         {
             Fly.Fly(-6000, 3000, 1500);
         }
+    }
+
+    public class Plane : IFly
+    {
+        public void Fly(int x, int y, int z)
+        {
+            //implement of fly here
+        }
+    }
+
+
+    public abstract class Penguin_C : Bird
+    {
+
     }
 }

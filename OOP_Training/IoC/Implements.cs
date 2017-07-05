@@ -9,6 +9,7 @@ namespace OOP_Training.IoC
     {
         public void Running()
         {
+            //implement code here
         }
     }
 
@@ -16,6 +17,7 @@ namespace OOP_Training.IoC
     {
         public void RidingBike()
         {
+            //implement code here
         }
     }
 
@@ -23,6 +25,7 @@ namespace OOP_Training.IoC
     {
         public void Swimming()
         {
+            //implement code here
         }
     }
 }

@@ -16,18 +16,23 @@ namespace OOP_Training.SOLID.InterfaceSegregation
 
         public void BasicFeature()
         {
+            //implement code here
         }
 
         public void ProfessionalFeature()
         {
             if(Version == ProductVersion.Basic)
                 throw new Exception(_versionNotSupportMsg);
+
+            //implement code here
         }
 
         public void PremiumFeature()
         {
             if (Version == ProductVersion.Basic || Version == ProductVersion.Professional)
                 throw new Exception(_versionNotSupportMsg);
+
+            //implement code here
         }
     }
 

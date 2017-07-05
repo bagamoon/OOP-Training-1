@@ -9,13 +9,13 @@ namespace OOP_Training.Composite_Inheritance
     {
         public virtual void Fly(int x, int y, int z)
         {
-
+            //implement of fly here
         }
     }
 
     public class Swallow : Bird
     {
-        public void FlyToSouth(int x, int y, int z)
+        public void FlyToSouth()
         {
             base.Fly(0, -1000, 1);
         }

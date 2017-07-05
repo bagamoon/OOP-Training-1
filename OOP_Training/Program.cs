@@ -27,12 +27,12 @@ namespace OOP_Training
 
             #region LeastKnowledge
 
-            var badStaff = new UnfriendlyStaff();
-            Doctor doctor = badStaff.GetAvailableDoctor(DateTime.Today);
+            var unfriendlyStaff = new UnfriendlyStaff();
+            Doctor doctor = unfriendlyStaff.GetAvailableDoctor(DateTime.Today);
             doctor.BookTimeByPhone(DateTime.Today);
 
-            var goodStaff = new FriendlyStaff();
-            goodStaff.BookDoctor(DateTime.Today);
+            var friendlyStaff = new FriendlyStaff();
+            friendlyStaff.BookDoctor(DateTime.Today);
 
             #endregion
 

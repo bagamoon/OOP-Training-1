@@ -13,12 +13,12 @@ namespace OOP_Training.SOLID.LeastKnowledge
 
         public void BookTimeByNetwork(DateTime date)
         {
-
+            //implement code here
         }
 
         public void BookTimeByPhone(DateTime date)
         {
-
+            //implement code here
         }
 
     }
